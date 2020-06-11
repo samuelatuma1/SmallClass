@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables Manipulation</title>
+        <style>
+            h3{
+                color:blue;
+                text-align: center;
+            }
+
+            p{
+                font-family: Arial, sans-serif;
+                font-size:20px;
+                color: green;
+            }
+
+            div{
+                background-color: burlywood;
+                height: 50px;
+                margin: 30px; /* Margin is th space around the outside borders of an element */
+                padding: 20px; /*Paddong iaffects the text directly*/
+                border: 3px solid blue;
+            }
+
+            /* We want to use CSS to be able to add styling to our table */
+            table{
+                border: 2px solid blue;
+                border-collapse: collapse;
+                width: 25%;
+            }
+            th, td{
+                border: 1px solid blue;
+                padding: 5px;
+            }
+            th{
+                background-color: blanchedalmond;
+            }
+
+            #middle{ /* The # sign means id in css */
+                background-color: white;
+
+
+            }
+            .name{ /* The . sign represents class in css */
+            font-style: italic;
+
+            }
+        </style>
+    </head>
+   
+   
+   
+   
+ <body>
+        <section>
+        <h3> This is a Table</h3>
+        <table>
+            <tr>
+                <th>Boys Name</th>
+                <th>Girls Name</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td> Peteessr</td>
+            </tr>
+            <tr>
+                <td>Jon</td>
+                <td> Petera</td>
+            </tr>
+        </table>
+        </section>
+            
+
+            <!-- Forms-->
+            <form>
+                <input type="text" placeholder="Trying out elements">
+                <button>Submit</button>
+            </form>
+            <p>Hi there</p>
+       
+            <!-- div  and span elements really dont do much.div is just a division of the web page and span is a span-->
+            <!-- They are mainly used for labelling a particular portion of a/the webpage-->
+            <div id="top">
+                <p> Just another make be <span class="name">here</span></p>
+            </div>
+            <div id="middle">
+                <p> John is here <span class="name">Again</span></p>
+            </div>
+        
+    </body>
+</html>
