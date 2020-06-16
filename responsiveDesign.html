@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Designs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This adjust the width to whatever the witdth of the device is-->
+        
+        <style>
+            /* Media control on when it comes to what we want to print */
+            @media print {
+                .dontPrint{ /*Remember, dontPrint is a class*/
+                    diplay: none ;
+                }
+            }
+
+
+            /*Media control with differently sized sceens*/
+            @media (min-width: 1000px){
+                body {background-color: blueviolet;}
+                h1::before{
+                    content: "welcome, Whoever you are ";
+                }
+            }
+            @media (max-width: 999px){
+                body{background-color: burlywood;}
+                h1::before{content: "welcome, ";}
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+        <section>
+            <!-- Media control on when it comes to what we want to print-->
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+            <p class="dontPrint">This one no go show when you wan print</p> 
+        </section>
+
+         <section>
+            <!--Media control at differentscreen size-->
+            <h1>This is my webpage</h1>
+        </section>
+        <p><a href="flex.html">This leads to flex </a></p>
+    
+    </body>
+</html>

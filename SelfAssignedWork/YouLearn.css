@@ -1,0 +1,89 @@
+#topview{
+                
+    background-color: darkcyan;
+    padding: 0.1% 1% 0.1% 1%;
+    
+    color: white;
+    font-weight: bold;
+   
+
+}
+
+#L{
+    
+    float: right;
+    width: 20%;
+}
+#R{
+    float: right;
+   
+}
+
+#big{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 0.5% 0% 0% 0%;
+}
+
+
+#program, #degree{
+   
+   text-align: center;
+     width: 30% ;
+                
+    float: left;
+                
+    clear: right;
+}
+
+
+#L::before{
+   content: "\15F0E";
+}
+#program, #degree, #discover{
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 800px){
+#topview{
+    
+    background-color: darkcyan ;
+    padding: 0.1% 1% 0.0% 1%;
+
+    color: white;
+    font-weight: bold;}
+
+    #program, #degree, #discover{
+            text-align: center;
+    }
+
+    #program, #degree{
+   width: 30% ;
+   float: left; 
+   clear: none ;
+    }
+   
+
+   
+
+        #L{
+            float: right;
+        }
+        #R{
+            float: right;
+            clear: right;
+            }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    }
+
+

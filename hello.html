@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Another long ride lol</title>
+        <style>
+            section p{ /* when not separated by a comma, ths addresses descendants. Descentants styles specific elements only inside a father(specified) element */
+                color: red;
+            }
+            
+
+            #trial>p{/* This affects only the direct descendants of trial*/
+                color: blue;
+            }
+
+            #trial p{
+                color: yellow;
+            }
+
+            input[type=text] {
+                color:green;
+            }
+
+            input[type=number] {
+                background-color:yellow;
+            }
+
+
+            button{
+                background-color: green;
+            }
+            button:hover{
+                background-color:blue;
+            }
+
+            /*Pseudo-elements */
+            a::before{
+                content: "\21d2"; /* (/21d2) represents the arrow icon */
+            }
+        </style>
+    </head>
+
+
+
+
+    <body>
+        <p>Hello world</p>
+
+
+
+        <!-- This shows how to use a form-->
+        <form>
+            <input name="name" type="text" placeholder="Input name">
+            
+            <div>
+                Family?<br>
+
+                <input name="family" type="radio" value="Atumas">Atumas
+                <input name="family" type="radio" value="Igenes">Igenes
+                <input name="family" type="radio" value="Baracks">Baracks
+            </div>
+
+            <input name="continent" list="continents" placeholder="continents"><!--Note that list references id datalist.-->
+            <datalist id="continents">
+                <option value="Africa">
+                <option value="Asia">
+                <option value="Australia">
+                <option value="Europe">
+                <option value="North America">
+            </datalist>
+
+            <br>
+
+            <input type="submit" name="submit" value="submit">
+        </form>
+        
+
+
+        <!-- Here, we focus on CSS applications-->
+
+            <!-- This talks about desendants-->
+            <section>
+                <p>This paragraph is a descendant of section in this case</p>
+            </section>
+
+            <p> This paragraph is his own father, lol</p>
+            <section id="trial">
+                <p>This is a nested element. Styled blue if this works</p>
+                <section>
+                    <p>This is </p>
+                </section>
+            </section>
+
+            <input type="text" name="name" placeholder="trial xxx">
+            <input type="number" name="age" placeholder="just numbers">
+            <br>
+
+            <button>Hover</button>
+
+            <!--Pseudo-elements-->     
+            <p><a href="#">This is connected to a pseudo-element</a></p>
+
+            <p><a href="responsiveDesign.html"> This leads to the next lecture Respnsive Designs</a></p>
+    </body>
+
+    
+</html>
